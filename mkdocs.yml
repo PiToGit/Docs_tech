@@ -13,7 +13,7 @@ copyright: Copyright &copy; 2025 PiT
 
 # Configuration
 theme:
-  name: mkdocs-material/material
+  name: mkdocs
   custom_dir: mkdocs-material/material/overrides
   features:
     - announce.dismiss
@@ -50,15 +50,15 @@ theme:
         name: Switch to light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: indigo
-      accent: indigo
+      primary: purple
+      accent: purple
       toggle:
         icon: material/toggle-switch
         name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: black
-      accent: indigo
+      accent: purple
       toggle:
         icon: material/toggle-switch-off
         name: Switch to system preference
