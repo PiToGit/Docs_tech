@@ -13,8 +13,8 @@ copyright: Copyright &copy; 2025 PiT
 
 # Configuration
 theme:
-  name: material
-  custom_dir: material/overrides
+  name: mkdocs-material/material
+  custom_dir: mkdocs-material/material/overrides
   features:
     - announce.dismiss
     - content.action.edit
