@@ -13,4 +13,4 @@ copyright: Copyright &copy; 2025 PiT
 
 # Configuration
 theme:
-  name: material
+  name: mkdocs
