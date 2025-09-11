@@ -9,7 +9,7 @@ repo_name: PiToGit/Docs_tech
 repo_url: https://github.com/PiToGit/Docs_tech
 
 # Copyright
-copyright: Copyright &copy; 2016 - 2025 Martin Donath
+copyright: Copyright &copy; 2025 PiT
 
 # Configuration
 theme:
@@ -50,15 +50,15 @@ theme:
         name: Switch to light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: indigo
-      accent: indigo
+      primary: purple
+      accent: purple
       toggle:
         icon: material/toggle-switch
         name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: black
-      accent: indigo
+      accent: purple
       toggle:
         icon: material/toggle-switch-off
         name: Switch to system preference
