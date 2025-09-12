@@ -1,17 +1,10 @@
-# Welcome to MkDocs
+# Welcome to PiT4Extia
+La page pour comprendre facilement la technique du monde de la Production Informatique
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+## Les grands Thèmes
 
-## Commands
+* l'EMS : Echange Messages Service
+* L'infra de base
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+## Et un peu plus
 
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.

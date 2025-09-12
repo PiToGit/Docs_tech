@@ -13,8 +13,8 @@ copyright: Copyright &copy; 2025 PiT
 
 # Configuration
 theme:
-  name: mkdocs
-  custom_dir: mkdocs-material/material/overrides
+  name: material
+  custom_dir: material/overrides
   features:
     - announce.dismiss
     - content.action.edit
@@ -44,26 +44,68 @@ theme:
     - toc.follow
     # - toc.integrate
   palette:
-    - toggle:
+    - media: "(prefers-color-scheme)"
+      toggle:
         icon: material/link
         name: Switch to light mode
-    - scheme: default
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
       primary: purple
       accent: purple
       toggle:
         icon: material/toggle-switch
         name: Switch to dark mode
-    - scheme: slate
-      primary: black
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: deep purple
       accent: purple
       toggle:
         icon: material/toggle-switch-off
         name: Switch to system preference
   font:
-    text: Nova Square
-    code: Nova Square Static
+    text: Roboto
+    code: Roboto Mono
   favicon: assets/favicon.png
   icon:
-    logo: logo
-  language: fr
-logo: Logo_Extia.png
+
+  logo: Logo_Extia.png
+
+# Plugins
+plugins:
+  - blog
+  - search:
+      separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+#  - minify:
+#      minify_html: true
+
+# Hooks
+hooks:
+  - material/overrides/hooks/shortcodes.py
+  - material/overrides/hooks/translations.py
+
+# Additional configuration
+extra:
+  status:
+    new: Recently added
+    deprecated: Deprecated
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/squidfunk
+    - icon: fontawesome/brands/docker
+      link: https://hub.docker.com/r/squidfunk/mkdocs-material/
+    - icon: fontawesome/brands/python
+      link: https://pypi.org/project/mkdocs-material/
+    - icon: fontawesome/brands/bluesky
+      link: https://bsky.app/profile/squidfunk.bsky.social
+    - icon: fontawesome/brands/mastodon
+      link: https://fosstodon.org/@squidfunk
+    - icon: fontawesome/brands/x-twitter
+      link: https://x.com/squidfunk
+
+
+not_in_nav: 
+
+# Page tree
+nav:
+  - Home: index.md
+
