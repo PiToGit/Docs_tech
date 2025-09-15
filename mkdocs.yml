@@ -51,15 +51,15 @@ theme:
         name: Switch to light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: purple
-      accent: purple
+      primary: deep orange
+      accent: deep orange
       toggle:
         icon: material/toggle-switch
         name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: deep purple
-      accent: purple
+      primary: deep orange
+      accent: deep orange
       toggle:
         icon: material/toggle-switch-off
         name: Switch to system preference
@@ -68,6 +68,22 @@ theme:
     code: Nova Square Mono
   favicon: Logo_Extia.png
   icon:
+  theme:
+    icon:
+      admonition:
+        note: octicons/clipboard
+        abstract: fontawesome/regular/clipboard-list
+        info: fontawesome/solid/circle-info
+        tip: octicons/squirrel-16
+        success: octicons/check-16
+        question: fontawesome/solid/question
+        warning: fontawesome/solid/triangle-exclamation
+        failure: octicons/x-circle-16
+        danger: fontawesome/solid/skull-crossbones
+        bug: octicons/bug-16
+        example: octicons/beaker-16
+        quote: octicons/quote-16
+      annotation: material/arrow-right-circle
 
   logo: Logo_Extia.png
 
@@ -76,6 +92,8 @@ plugins:
   - blog
   - search:
       separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+  - drawio:
+      darkmode: true
 
 # Additional configuration
 extra:
@@ -111,9 +129,13 @@ markdown_extensions:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+
 not_in_nav: 
 
 # Page tree
 nav:
   - Home: index.md
+  - EMS: ems.md
 
