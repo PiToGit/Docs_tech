@@ -1,0 +1,79 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/28.1.2 Chrome/138.0.7204.243 Electron/37.4.0 Safari/537.36" version="28.1.2">
+  <diagram name="Page-1" id="DKVzVU8vkvl7PHEKbBNO">
+    <mxGraphModel dx="1426" dy="889" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="albVLehJgzwlY0HT57Qq-3" value="Système de vente&lt;div&gt;&quot;Producteur&quot;&lt;/div&gt;" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#505050;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.servers.application_server_green;" parent="1" vertex="1">
+          <mxGeometry x="199" y="140" width="46" height="56" as="geometry" />
+        </mxCell>
+        <mxCell id="albVLehJgzwlY0HT57Qq-4" value="Message:&amp;nbsp;&lt;div&gt;Commande #12345&lt;/div&gt;" style="verticalLabelPosition=middle;aspect=fixed;html=1;shape=mxgraph.salesforce.inbox;fillColorStyles=fillColor2,fillColor3,fillColor4;fillColor2=#00857d;fillColor3=#00b2a9;fillColor4=#ffffff;fillColor=none;strokeColor=none;labelPosition=right;align=left;verticalAlign=middle;" parent="1" vertex="1">
+          <mxGeometry x="569" y="145.5" width="60" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="albVLehJgzwlY0HT57Qq-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.116;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="albVLehJgzwlY0HT57Qq-3" target="albVLehJgzwlY0HT57Qq-4" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="albVLehJgzwlY0HT57Qq-6" value="Crée le message" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="albVLehJgzwlY0HT57Qq-5" vertex="1" connectable="0">
+          <mxGeometry x="0.2387" y="-1" relative="1" as="geometry">
+            <mxPoint x="-36" y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="albVLehJgzwlY0HT57Qq-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="e8fxIxaBuBlZJn0a8tXV-1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="300" y="400" as="targetPoint" />
+            <mxPoint x="534.5" y="429.5" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="380" y="400" />
+              <mxPoint x="380" y="400" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="albVLehJgzwlY0HT57Qq-13" value="Stocke dans la file&lt;div&gt;de commandes&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="albVLehJgzwlY0HT57Qq-12" vertex="1" connectable="0">
+          <mxGeometry x="-0.1031" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="albVLehJgzwlY0HT57Qq-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="albVLehJgzwlY0HT57Qq-4" target="e8fxIxaBuBlZJn0a8tXV-1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="599" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="albVLehJgzwlY0HT57Qq-11" value="Envoyé à la destination" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="albVLehJgzwlY0HT57Qq-10" vertex="1" connectable="0">
+          <mxGeometry x="0.1633" y="4" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e8fxIxaBuBlZJn0a8tXV-1" value="Serveur EMS&lt;div&gt;Gestionnaire de Boîtes&lt;/div&gt;" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#505050;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.communications.system_mailbox;" parent="1" vertex="1">
+          <mxGeometry x="566.25" y="370" width="65.5" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="e8fxIxaBuBlZJn0a8tXV-2" value="Commandes à traiter" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#505050;labelPosition=left;verticalLabelPosition=middle;verticalAlign=middle;outlineConnect=0;align=right;shape=mxgraph.office.concepts.mailbox2;" parent="1" vertex="1">
+          <mxGeometry x="260" y="381" width="40" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="e8fxIxaBuBlZJn0a8tXV-3" value="" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#505050;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.concepts.mailbox2;" parent="1" vertex="1">
+          <mxGeometry x="260" y="338" width="40" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="e8fxIxaBuBlZJn0a8tXV-4" value="" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#505050;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.concepts.mailbox2;" parent="1" vertex="1">
+          <mxGeometry x="260" y="300" width="40" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="POOiRnrUBJ_n6eWrub4B-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="e8fxIxaBuBlZJn0a8tXV-2" target="WSfFAM2AZC79BmOCrj2o-3" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+            <mxPoint x="280" y="600" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WSfFAM2AZC79BmOCrj2o-1" value="Préparation de la commande" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#505050;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.users.mail_user;" parent="1" vertex="1">
+          <mxGeometry x="580" y="583.5" width="58" height="59" as="geometry" />
+        </mxCell>
+        <mxCell id="WSfFAM2AZC79BmOCrj2o-2" value="&lt;span style=&quot;background-color: light-dark(rgb(255, 255, 255), rgb(18, 18, 18));&quot;&gt;Lecture du message&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;background-color: light-dark(rgb(255, 255, 255), rgb(18, 18, 18));&quot;&gt;Commande #12345&lt;/span&gt;&lt;/div&gt;" style="html=1;verticalLabelPosition=middle;align=right;labelBackgroundColor=#ffffff;verticalAlign=middle;strokeWidth=2;strokeColor=#0080F0;shadow=0;dashed=0;shape=mxgraph.ios7.icons.envelope_(message);labelPosition=left;" parent="1" vertex="1">
+          <mxGeometry x="450" y="573.5" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="WSfFAM2AZC79BmOCrj2o-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="WSfFAM2AZC79BmOCrj2o-3" target="WSfFAM2AZC79BmOCrj2o-1" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WSfFAM2AZC79BmOCrj2o-3" value="Système de Logistique&lt;div&gt;&quot;Consommateur&quot;&lt;/div&gt;" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#505050;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.servers.application_server_green;" parent="1" vertex="1">
+          <mxGeometry x="257" y="585" width="46" height="56" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

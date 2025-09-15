@@ -8,3 +8,11 @@ La page pour comprendre facilement la technique du monde de la Production Inform
 
 ## Et un peu plus
 
+!!! info "Information"
+    Une partie de la structure des pages suivantes a été générée via une IA.
+
+??? warning "Attention"
+    Prends garde à toi qui lie ces quelques lignes
+
+!!! question "Question"
+    Tu as des questions ?
