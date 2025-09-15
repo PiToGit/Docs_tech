@@ -16,9 +16,9 @@ theme:
   name: material
   custom_dir: material/overrides
   features:
-    - announce.dismiss
-    - content.action.edit
-    - content.action.view
+    #- announce.dismiss
+    #- content.action.edit
+    #- content.action.view
     - content.code.annotate
     - content.code.copy
     # - content.code.select
@@ -26,11 +26,12 @@ theme:
     # - content.tabs.link
     - content.tooltips
     # - header.autohide
-    # - navigation.expand
+    - navigation.expand
     - navigation.footer
     - navigation.indexes
-    # - navigation.instant
-    # - navigation.instant.prefetch
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.instant.preview
     # - navigation.instant.progress
     # - navigation.prune
     - navigation.sections
@@ -63,9 +64,9 @@ theme:
         icon: material/toggle-switch-off
         name: Switch to system preference
   font:
-    text: Roboto
-    code: Roboto Mono
-  favicon: assets/favicon.png
+    text: Nova Square
+    code: Nova Square Mono
+  favicon: Logo_Extia.png
   icon:
 
   logo: Logo_Extia.png
@@ -75,13 +76,6 @@ plugins:
   - blog
   - search:
       separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
-#  - minify:
-#      minify_html: true
-
-# Hooks
-hooks:
-  - material/overrides/hooks/shortcodes.py
-  - material/overrides/hooks/translations.py
 
 # Additional configuration
 extra:
@@ -89,20 +83,34 @@ extra:
     new: Recently added
     deprecated: Deprecated
   social:
-    - icon: fontawesome/brands/github
-      link: https://github.com/squidfunk
-    - icon: fontawesome/brands/docker
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/company/extia/posts/?feedView=all
+    - icon: fontawesome/brands/discord
       link: https://hub.docker.com/r/squidfunk/mkdocs-material/
-    - icon: fontawesome/brands/python
-      link: https://pypi.org/project/mkdocs-material/
-    - icon: fontawesome/brands/bluesky
-      link: https://bsky.app/profile/squidfunk.bsky.social
-    - icon: fontawesome/brands/mastodon
-      link: https://fosstodon.org/@squidfunk
-    - icon: fontawesome/brands/x-twitter
-      link: https://x.com/squidfunk
+    - icon: fontawesome/brands/instagram
+      link: https://www.instagram.com/extia_conseil/?hl=fr
 
 
+# Extensions
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
 not_in_nav: 
 
 # Page tree
