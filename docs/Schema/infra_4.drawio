@@ -1,0 +1,93 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/28.1.2 Chrome/138.0.7204.243 Electron/37.4.0 Safari/537.36" version="28.1.2">
+  <diagram name="Page-1" id="JUSjm7wcqgYat8j9gZ9I">
+    <mxGraphModel dx="1426" dy="2058" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Ti9Hax_WTztbZPjyhvOE-22" value="DMZ" style="rounded=0;whiteSpace=wrap;html=1;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;" vertex="1" parent="1">
+          <mxGeometry x="140.5" y="-10" width="189.5" height="236" as="geometry" />
+        </mxCell>
+        <mxCell id="Ti9Hax_WTztbZPjyhvOE-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=classic;startFill=1;" edge="1" parent="1" source="Ti9Hax_WTztbZPjyhvOE-1" target="Ti9Hax_WTztbZPjyhvOE-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ti9Hax_WTztbZPjyhvOE-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Ti9Hax_WTztbZPjyhvOE-1" target="Ti9Hax_WTztbZPjyhvOE-15">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="420" y="-55" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ti9Hax_WTztbZPjyhvOE-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=classic;startFill=1;" edge="1" parent="1" source="Ti9Hax_WTztbZPjyhvOE-1" target="Ti9Hax_WTztbZPjyhvOE-21">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ti9Hax_WTztbZPjyhvOE-1" value="Serveur Front" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#505050;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.servers.application_server;" vertex="1" parent="1">
+          <mxGeometry x="400" y="54" width="46" height="56" as="geometry" />
+        </mxCell>
+        <mxCell id="Ti9Hax_WTztbZPjyhvOE-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=classic;startFill=1;" edge="1" parent="1" source="Ti9Hax_WTztbZPjyhvOE-2" target="Ti9Hax_WTztbZPjyhvOE-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ti9Hax_WTztbZPjyhvOE-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Ti9Hax_WTztbZPjyhvOE-2" target="Ti9Hax_WTztbZPjyhvOE-15">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="580" y="-55" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ti9Hax_WTztbZPjyhvOE-2" value="Serveur backend" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#505050;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.servers.application_server;" vertex="1" parent="1">
+          <mxGeometry x="570" y="54" width="46" height="56" as="geometry" />
+        </mxCell>
+        <mxCell id="Ti9Hax_WTztbZPjyhvOE-3" value="serveur BDD" style="sketch=0;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#505050;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.databases.database_server;" vertex="1" parent="1">
+          <mxGeometry x="740" y="53" width="43" height="57" as="geometry" />
+        </mxCell>
+        <mxCell id="Ti9Hax_WTztbZPjyhvOE-4" value="Utilisateur" style="points=[[0.35,0,0],[0.98,0.51,0],[1,0.71,0],[0.67,1,0],[0,0.795,0],[0,0.65,0]];verticalLabelPosition=bottom;sketch=0;html=1;verticalAlign=top;aspect=fixed;align=center;pointerEvents=1;shape=mxgraph.cisco19.user;fillColor=#005073;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="40" y="56.5" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Ti9Hax_WTztbZPjyhvOE-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Ti9Hax_WTztbZPjyhvOE-11" target="Ti9Hax_WTztbZPjyhvOE-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ti9Hax_WTztbZPjyhvOE-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Ti9Hax_WTztbZPjyhvOE-11" target="Ti9Hax_WTztbZPjyhvOE-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ti9Hax_WTztbZPjyhvOE-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Ti9Hax_WTztbZPjyhvOE-11" target="Ti9Hax_WTztbZPjyhvOE-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ti9Hax_WTztbZPjyhvOE-11" value="Serveur Active Directory" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#505050;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.servers.active_directory_federation_services_server;" vertex="1" parent="1">
+          <mxGeometry x="570" y="197" width="45" height="56" as="geometry" />
+        </mxCell>
+        <mxCell id="Ti9Hax_WTztbZPjyhvOE-15" value="Stockage de fichiers" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#505050;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.servers.file_server;" vertex="1" parent="1">
+          <mxGeometry x="480" y="-83" width="45" height="56" as="geometry" />
+        </mxCell>
+        <mxCell id="Ti9Hax_WTztbZPjyhvOE-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Ti9Hax_WTztbZPjyhvOE-18" target="Ti9Hax_WTztbZPjyhvOE-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="350" y="100" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ti9Hax_WTztbZPjyhvOE-18" value="Serveur de domaines" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#505050;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.servers.domain_controller;" vertex="1" parent="1">
+          <mxGeometry x="340" y="300" width="45" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="Ti9Hax_WTztbZPjyhvOE-20" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=classic;startFill=1;" edge="1" parent="1" source="Ti9Hax_WTztbZPjyhvOE-24" target="Ti9Hax_WTztbZPjyhvOE-21">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="140" y="81" as="sourcePoint" />
+            <mxPoint x="290" y="81" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ti9Hax_WTztbZPjyhvOE-21" value="Proxy" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#505050;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.servers.reverse_proxy;" vertex="1" parent="1">
+          <mxGeometry x="270" y="55.5" width="41" height="53" as="geometry" />
+        </mxCell>
+        <mxCell id="Ti9Hax_WTztbZPjyhvOE-25" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=classic;startFill=1;" edge="1" parent="1" source="Ti9Hax_WTztbZPjyhvOE-4" target="Ti9Hax_WTztbZPjyhvOE-24">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="90" y="82" as="sourcePoint" />
+            <mxPoint x="270" y="82" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ti9Hax_WTztbZPjyhvOE-24" value="FireWall" style="verticalLabelPosition=bottom;sketch=0;aspect=fixed;html=1;verticalAlign=top;strokeColor=none;align=center;outlineConnect=0;shape=mxgraph.citrix.firewall;" vertex="1" parent="1">
+          <mxGeometry x="170" y="54.2" width="45" height="55.8" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
