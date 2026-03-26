@@ -16,7 +16,6 @@ Kafka fonctionne comme un **journal de commit distribué, partitionné et répli
 
 ## Architecture simplifiée
 
-```text
 +----------------+       +----------------+       +----------------+
 |  Producteurs   | ----> |   Brokers      | ----> |  Consommateurs |
 | (Producers)    |       | (Kafka Cluster)|       | (Consumers)    |
