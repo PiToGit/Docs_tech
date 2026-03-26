@@ -136,4 +136,5 @@ not_in_nav:
 nav:
   - Home: index.md
   - EMS: ems.md
+  - Kafka: Kafka.md
 
