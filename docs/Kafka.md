@@ -16,14 +16,12 @@ Kafka fonctionne comme un **journal de commit distribué, partitionné et répli
 
 ## Architecture simplifiée
 
-+----------------+       +----------------+       +----------------+
-|  Producteurs   | ----> |   Brokers      | ----> |  Consommateurs |
-| (Producers)    |       | (Kafka Cluster)|       | (Consumers)    |
-+----------------+       +----------------+       +----------------+
-         |                        |
-         |                        v
-         |                 Topics / Partitions
-         +------------------------------------->
+```mermaid
+graph LR
+    Producteurs[Producteurs (Producers)] --> Brokers[Brokers (Kafka Cluster)]
+    Brokers --> Consommateurs[Consommateurs (Consumers)]
+    Producteurs -->|Topics / Partitions| Brokers
+
 
 !!! info "Les briques principales"
     Producer (producteur) : application qui écrit des événements dans Kafka.
@@ -40,16 +38,39 @@ Kafka fonctionne comme un **journal de commit distribué, partitionné et répli
 
 # Schéma : une infra typique avec plusieurs usages
 
-                (1) événements
-[Web / App]  --------------------+
-                                  \
-[Backend API] ---------------------+-->  [Kafka Cluster]
-                                       /   |   |   \
-                                      /    |   |    \
-                          (2) analytics   (3) search  (4) alerting
-                            [Stream Job]  [Indexer]   [Monitoring]
-                                  |           |            |
-                               [DWH]       [Search]     [Pager/Email]
+```mermaid
+graph TD
+    subgraph Sources
+        WebApp[Web / App]
+        BackendAPI[Backend API]
+    end
+
+    subgraph KafkaCluster["Kafka Cluster"]
+    end
+
+    subgraph Consumers
+        StreamJob[(2) analytics<br/>Stream Job]
+        Indexer[(3) search<br/>Indexer]
+        Monitoring[(4) alerting<br/>Monitoring]
+    end
+
+    subgraph Destinations
+        DWH[DWH]
+        Search[Search]
+        PagerEmail[Pager / Email]
+    end
+
+    WebApp -->| (1) événements | KafkaCluster
+    BackendAPI -->| (1) événements | KafkaCluster
+
+    KafkaCluster --> StreamJob
+    KafkaCluster --> Indexer
+    KafkaCluster --> Monitoring
+
+    StreamJob --> DWH
+    Indexer --> Search
+    Monitoring --> PagerEmail
+
 
 !!! exemple "exemples d’utilisation"
     1) Tracking produit (clics, vues, conversion)
