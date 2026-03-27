@@ -2,21 +2,21 @@
 
 ## Qu'est-ce qu'Apache Kafka ?
 
-Apache Kafka est une **plateforme de streaming distribuée** conçue pour gérer des flux de données en temps réel. En termes simples, Kafka permet de **lire, écrire, stocker et traiter des événements** (ou messages) de manière rapide, fiable et scalable.
+Apache Kafka est une **plateforme de streaming distribuée** conçue pour gérer des flux de données en temps réel.
+En termes simples, Kafka permet de **lire, écrire, stocker et traiter des événements** (ou messages) de manière rapide, fiable et scalable.
 
 Kafka fonctionne comme un **journal de commit distribué, partitionné et répliqué** : les données sont organisées en séquences (logs), réparties sur plusieurs serveurs (**brokers**), et copiées (**répliquées**) pour garantir la disponibilité.
 
-### Les 3 capacités clés de Kafka
-
-- **Publier et s’abonner à des flux d’événements** (modèle pub/sub)
-- **Stocker durablement** ces événements (sur disque)
-- **Traiter** ces flux en temps réel (Kafka Streams ou outils externes)
-
----
+!!! warning '### Les 3 capacités clés de Kafka'
+    
+    - **Publier et s’abonner à des flux d’événements** (modèle pub/sub)
+    - **Stocker durablement** ces événements (sur disque)
+    - **Traiter** ces flux en temps réel (Kafka Streams ou outils externes)
 
 ## Architecture simplifiée
 
 ```mermaid
+    
     graph LR
         Producteurs[Producteurs (Producers)] --> Brokers[Brokers (Kafka Cluster)]
         Brokers --> Consommateurs[Consommateurs (Consumers)]
@@ -39,6 +39,7 @@ Kafka fonctionne comme un **journal de commit distribué, partitionné et répli
 # Schéma : une infra typique avec plusieurs usages
 
 ```mermaid
+    
     graph TD
         subgraph Sources
             WebApp[Web / App]
