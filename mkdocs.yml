@@ -135,6 +135,9 @@ not_in_nav:
 # Page tree
 nav:
   - Home: index.md
-  - EMS: ems.md
-  - Kafka: Kafka.md
+  - EMS: 
+    - ems.md
+  - Kafka: 
+    - Présentation: Kafka.md
+    - Réplication & tolérance aux pannes : replication.md
 
