@@ -7,20 +7,19 @@ En termes simples, Kafka permet de **lire, écrire, stocker et traiter des évé
 
 Kafka fonctionne comme un **journal de commit distribué, partitionné et répliqué** : les données sont organisées en séquences (logs), réparties sur plusieurs serveurs (**brokers**), et copiées (**répliquées**) pour garantir la disponibilité.
 
-!!! warning '### Les 3 capacités clés de Kafka'
-    
+!!! warning '**Les 3 capacités clés de Kafka**'
     - **Publier et s’abonner à des flux d’événements** (modèle pub/sub)
     - **Stocker durablement** ces événements (sur disque)
     - **Traiter** ces flux en temps réel (Kafka Streams ou outils externes)
 
 ## Architecture simplifiée
 
-```mermaid
-    
+``` mermaid
     graph LR
-        Producteurs[Producteurs (Producers)] --> Brokers[Brokers (Kafka Cluster)]
-        Brokers --> Consommateurs[Consommateurs (Consumers)]
-        Producteurs -->|Topics / Partitions| Brokers
+        Producteurs[Producteurs (Producers)] --> Brokers[Brokers (Kafka Cluster)];
+        Brokers --> Consommateurs[Consommateurs (Consumers)];
+        Producteurs -->|Topics / Partitions| Brokers;
+```
 
 
 !!! info "Les briques principales"
@@ -38,40 +37,40 @@ Kafka fonctionne comme un **journal de commit distribué, partitionné et répli
 
 # Schéma : une infra typique avec plusieurs usages
 
-```mermaid
+``` mermaid
     
     graph TD
-        subgraph Sources
-            WebApp[Web / App]
-            BackendAPI[Backend API]
+        subgraph Sources;
+            WebApp[Web / App];
+            BackendAPI[Backend API];
         end
 
-        subgraph KafkaCluster["Kafka Cluster"]
+        subgraph KafkaCluster["Kafka Cluster"];
         end
 
         subgraph Consumers
-            StreamJob[(2) analytics<br/>Stream Job]
-            Indexer[(3) search<br/>Indexer]
-            Monitoring[(4) alerting<br/>Monitoring]
+            StreamJob[(2) analytics<br/>Stream Job];
+            Indexer[(3) search<br/>Indexer];
+            Monitoring[(4) alerting<br/>Monitoring];
         end
 
         subgraph Destinations
-            DWH[DWH]
-            Search[Search]
-            PagerEmail[Pager / Email]
+            DWH[DWH];
+            Search[Search];
+            PagerEmail[Pager / Email];
         end
 
-        WebApp -->| (1) événements | KafkaCluster
-        BackendAPI -->| (1) événements | KafkaCluster
+        WebApp -->| (1) événements | KafkaCluster;
+        BackendAPI -->| (1) événements | KafkaCluster;
 
-        KafkaCluster --> StreamJob
-        KafkaCluster --> Indexer
-        KafkaCluster --> Monitoring
+        KafkaCluster --> StreamJob;
+        KafkaCluster --> Indexer;
+        KafkaCluster --> Monitoring;
 
-        StreamJob --> DWH
-        Indexer --> Search
-        Monitoring --> PagerEmail
-
+        StreamJob --> DWH;
+        Indexer --> Search;
+        Monitoring --> PagerEmail;
+```
 
 !!! exemple "exemples d’utilisation"
     1) Tracking produit (clics, vues, conversion)
