@@ -15,10 +15,10 @@ Kafka fonctionne comme un **journal de commit distribué, partitionné et répli
 ## Architecture simplifiée
 
 ``` mermaid
-    graph LR
-        Producteurs[Producteurs (Producers)] --> Brokers[Brokers (Kafka Cluster)];
-        Brokers --> Consommateurs[Consommateurs (Consumers)];
-        Producteurs -->|Topics / Partitions| Brokers;
+graph LR
+    Producteurs[Producteurs (Producers)] --> Brokers[Brokers (Kafka Cluster)];
+    Brokers --> Consommateurs[Consommateurs (Consumers)];
+    Producteurs -->|Topics / Partitions| Brokers;
 ```
 
 
@@ -39,37 +39,31 @@ Kafka fonctionne comme un **journal de commit distribué, partitionné et répli
 
 ``` mermaid
     
-    graph TD
-        subgraph Sources;
-            WebApp[Web / App];
-            BackendAPI[Backend API];
-        end
-
-        subgraph KafkaCluster["Kafka Cluster"];
-        end
-
-        subgraph Consumers
-            StreamJob[(2) analytics<br/>Stream Job];
-            Indexer[(3) search<br/>Indexer];
-            Monitoring[(4) alerting<br/>Monitoring];
-        end
-
-        subgraph Destinations
-            DWH[DWH];
-            Search[Search];
-            PagerEmail[Pager / Email];
-        end
-
-        WebApp -->| (1) événements | KafkaCluster;
-        BackendAPI -->| (1) événements | KafkaCluster;
-
-        KafkaCluster --> StreamJob;
-        KafkaCluster --> Indexer;
-        KafkaCluster --> Monitoring;
-
-        StreamJob --> DWH;
-        Indexer --> Search;
-        Monitoring --> PagerEmail;
+graph TD
+    subgraph Sources;
+        WebApp[Web / App];
+        BackendAPI[Backend API];
+    end
+    subgraph KafkaCluster["Kafka Cluster"];
+    end
+    subgraph Consumers
+        StreamJob[(2) analytics<br/>Stream Job];
+        Indexer[(3) search<br/>Indexer];
+        Monitoring[(4) alerting<br/>Monitoring];
+    end
+    subgraph Destinations
+        DWH[DWH];
+        Search[Search];
+        PagerEmail[Pager / Email];
+    end
+    WebApp -->| (1) événements | KafkaCluster;
+    BackendAPI -->| (1) événements | KafkaCluster;
+    KafkaCluster --> StreamJob;
+    KafkaCluster --> Indexer;
+    KafkaCluster --> Monitoring;
+    StreamJob --> DWH;
+    Indexer --> Search;
+    Monitoring --> PagerEmail;
 ```
 
 !!! exemple "exemples d’utilisation"
